@@ -5,10 +5,11 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Header, { Login, Profile } from './Header'
 import Counter from './Counter'
+import Input from './input'
 
 function App() {
   const [hide, setHide] = useState(true)
-
+  let name="Tejas"
   return (
     <>
 
@@ -19,7 +20,9 @@ function App() {
 
 
       <button onClick={()=>setHide(!hide)}>Show/Hide</button>
-      {hide?<Counter />:null}
+      {/* {hide?<Counter name={name}><h2>This is children part</h2></Counter>:null} */}
+
+      <Input></Input>
     </>
   )
 }
